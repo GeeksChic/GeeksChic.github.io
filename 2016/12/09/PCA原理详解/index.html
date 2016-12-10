@@ -90,7 +90,7 @@
 <meta property="og:url" content="geekschic.github.io/2016/12/09/PCA原理详解/index.html">
 <meta property="og:site_name" content="Geek Chic">
 <meta property="og:description" content="最近看了一些关于降维算法的东西，本文首先给出了七种算法的一个信息表，归纳了关于每个算法可以调节的(超)参数、算法主要目的等等，然后介绍了降维的一些基本概念，包括降维是什么、为什么要降维、降维可以解决维数灾难等，然后分析可以从什么样的角度来降维，接着整理了这些算法的具体流程。">
-<meta property="og:updated_time" content="2016-12-10T08:09:08.787Z">
+<meta property="og:updated_time" content="2016-12-10T11:41:59.976Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PCA原理详解">
 <meta name="twitter:description" content="最近看了一些关于降维算法的东西，本文首先给出了七种算法的一个信息表，归纳了关于每个算法可以调节的(超)参数、算法主要目的等等，然后介绍了降维的一些基本概念，包括降维是什么、为什么要降维、降维可以解决维数灾难等，然后分析可以从什么样的角度来降维，接着整理了这些算法的具体流程。">
@@ -404,8 +404,8 @@
 <p>而为什么可以降维，这是因为数据有冗余，要么是一些没有用的信息，要么是一些重复表达的信息，例如一张512<em>512的图只有中心100</em>100的区域内有非0值，剩下的区域就是没有用的信息，又或者一张图是成中心对称的，那么对称的部分信息就重复了。正确降维后的数据一般保留了原始数据的大部分的重要信息，它完全可以替代输入去做一些其他的工作，从而很大程度上可以减少计算量。例如降到二维或者三维来可视化。</p>
 <p>而为什么可以降维，这是因为数据有冗余，要么是一些没有用的信息，要么是一些重复表达的信息，例如一张512<em>512的图只有中心100</em>100的区域内有非0值，剩下的区域就是没有用的信息，又或者一张图是成中心对称的，那么对称的部分信息就重复了。正确降维后的数据一般保留了原始数据的大部分的重要信息，它完全可以替代输入去做一些其他的工作，从而很大程度上可以减少计算量。例如降到二维或者三维来可视化。</p>
 <p>而为什么可以降维，这是因为数据有冗余，要么是一些没有用的信息，要么是一些重复表达的信息，例如一张512<em>512的图只有中心100</em>100的区域内有非0值，剩下的区域就是没有用的信息，又或者一张图是成中心对称的，那么对称的部分信息就重复了。正确降维后的数据一般保留了原始数据的大部分的重要信息，它完全可以替代输入去做一些其他的工作，从而很大程度上可以减少计算量。例如降到二维或者三维来可视化。</p>
-<p>$c=a+b$这是因为数据有冗余，要么是一些没有用的信息，要么是一些重复表达的信息，$c=a^2$</p>
-<p>$\frac{a}{b}$ and this equation $E=m\cdot c^2$ $sqrt(a)$</p>
+<p>$c=a+b$这是因为数据有冗余，要么是一些没有用的信息，要么是一些重复表达的信息，$c=a^2$，另一个公式可以表达为$E=m\cdot c^2$</p>
+<p>被誉为最美的数学公式:$e^{\pi i} + 1 = 0$，即为传说中的欧拉公式。上面是在电脑A上做的工作,接下来回到电脑B. 首先, 像在电脑A上搭建博客一样, 要在B上安装git, node.js, hexo 安装过程自己Google(既然在A上搭好博客了,安装过程应该会了). 然后把github上的repository克隆到电脑B上。首先, 在github上再键一个repository, 假定为HexoBlog. 进到电脑A上的博客的文件夹. 如果你的博客主题是从github上克隆下来的, 要把主题文件夹里的.git文件夹删掉. 以我自己的为例, 我用的主题是yilia, 用 ls -la命令就看到 thems/yilia/ 下面的隐藏文件夹.git. 然后删掉。</p>
 
       
     </div>
@@ -447,6 +447,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/10/SVM-Tutorial/" rel="prev" title="SVM Tutorial">
+                SVM Tutorial <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -509,7 +513,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -517,7 +521,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -526,7 +530,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
